@@ -12,7 +12,7 @@ def inverse_2x2(matrix) -> torch.Tensor | None:
     """
     m = torch.as_tensor(matrix, dtype=torch.float)
     # Your code here
-    if torch.isclose(torch.linalg.det(m), torch.tensor(0.0)).item(): 
+    if torch.isclose(torch.linalg.det(m), torch.tensor(0.0)): 
         return None 
     
     return torch.linalg.inv(m)
